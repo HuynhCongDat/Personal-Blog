@@ -6,4 +6,4 @@
 
 - VSCode, github,...
 - Video demo cho dự án:
-- Link Video demo: [Video demo](https://topdev.vn)
+- Link Video demo: [Video demo](https://www.youtube.com/watch?v=Xf2q0MBVY_g)
