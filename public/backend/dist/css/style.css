@@ -1,0 +1,26 @@
+.content .box-body-content {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.content .box-body-content table {
+  margin: 1rem;
+}
+
+.content .box-body-content .table-bordered {
+  width: 98%;
+}
+
+.content .box-body-content .table-bordered thead {
+  font-weight: bold;
+}
+
+.main-sidebar {
+  background: #363636 !important;
+  height: 170%;
+}
+
+.main-header .navbar {
+  background: #494949 !important;
+}
+/*# sourceMappingURL=style.css.map */

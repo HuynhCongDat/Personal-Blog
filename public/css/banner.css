@@ -1,0 +1,31 @@
+.banner .carousel .carousel-inner {
+  width: 100%;
+  height: 500px;
+}
+
+.banner .carousel .carousel-inner .item {
+  position: relative;
+}
+
+.banner .carousel .carousel-inner .item .bg1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.banner .carousel .carousel-inner .item .bg2 {
+  top: 15rem;
+  left: 12rem;
+  position: absolute;
+  z-index: 3;
+}
+
+.banner .carousel .carousel-inner .item p {
+  position: absolute;
+  top: 20rem;
+  left: 40rem;
+  z-index: 5;
+  font-size: 8rem;
+}
+/*# sourceMappingURL=banner.css.map */

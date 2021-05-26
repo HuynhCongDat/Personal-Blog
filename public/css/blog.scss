@@ -1,0 +1,281 @@
+//import google font
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Hanalei&family=Lato:ital,wght@0,400;1,300&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,400;1,300&family=Source+Serif+Pro:ital,wght@0,400;1,300;1,400&display=swap');
+//reset
+*{
+	//color: #747474;
+	margin:0;
+	padding:0;
+	border: none;
+	text-decoration: none;
+}
+
+:root{
+
+	/*Theme colors*/
+	--text-gray:#3f4954;
+	--light-black:#2e2c2caf;
+    --light-gray:rgba(255,255,255,0.87);
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --midnight:#104f55;
+    /*gradient color*/
+    --sky:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --bggradient:linear-gradient(to bottom,#dd2476,#ff512f);
+
+    //Theme font family
+
+	--Dancing:'Dancing Script', cursive; //inform
+	--Hanalei:'Hanalei', cursive; //category
+	--Lato:'Lato', sans-serif; //calendar
+    --Roboto:'Roboto', sans-serif; //content
+    --Source:'Source Serif Pro', serif; //header
+    --Playfair:'Playfair Display', serif; //title
+
+}
+.blog{
+	width: 100%;
+	height: auto;
+	display: flex;
+	overflow-x:hidden;
+	.left-blog{
+		width: 60%;
+		height: auto;
+        margin:1% 0 3% 5%;
+        background-color: var(--light-gray);
+        border-radius: 0.5rem;
+		hr{
+			width: 80%;
+			margin-left: 9%;
+		}
+		.paginate{
+			margin-left: 38rem;
+		}
+		.post-content-blog{
+			margin-top: 30px;
+			width: 90%;
+			height: 700px;
+			margin-left: 5%;
+			position: relative;
+		    display: flex;
+		    justify-content: space-around;
+		    align-items: center;
+			.image-post-blog{
+				width: 100%;
+				height: 420px;
+				position: absolute;
+				top: 0px;
+				div{
+					overflow: hidden;
+				}
+				img{
+					z-index: 1;
+					width: 100%;
+	                transition: all 1s ease;
+	                width: 100%;
+				    height: 420px;
+				}
+				img:hover{
+					transform: scale(1.3);
+				}
+				.post-info{
+					width: 60%;
+					height: 50px;
+					z-index: 2;
+					position: absolute;
+					background: var(--sky);
+					padding-top: 1rem;
+					padding-bottom: 1rem;
+					padding-right: 1rem;
+					padding-left: 3rem;
+					bottom: -2.5rem;
+					left: 12vw;
+					border-radius: 3rem;
+					span{
+						margin: .5rem .5rem;
+						font-size: 1.2rem;
+					}
+				}
+			}
+			.post-title{
+				position: absolute;
+				bottom: 0px;
+				height: 280px;
+				width: 100%;
+				a{
+	                font-size: 1.5rem;
+				}
+				h1{
+					height: 25%;
+					font-family: var(--Playfair);
+                    font-size: 2.5rem;
+                    font-weight: bold;
+					padding:1rem;
+					text-decoration: none;
+					margin-top: 5rem;
+				}
+				h1:hover{
+					text-decoration: none;
+				}
+				p{
+					padding:1rem;
+					height: 45%;
+					font-family: var(--Lexend);
+                    color: var(--text-light);
+				}
+				.post-btn{
+					border-radius: 0;
+					padding: .7rem 1.5rem;
+					background: var(--sky);
+					margin: -0.5rem auto .5rem 1rem;
+					height: 11%;
+				}
+			}
+		}
+	}
+	.right-blog{
+		width: 28.5%;
+		height: auto;
+        margin: 1% 0 3% 1.5%;
+        border-radius: 0.5rem;
+        .content{
+            height: 45%;
+            background-color: var(--light-gray);
+            border: 0.1px solid white;
+            border-radius: .3rem;
+            .search{
+                width: 100%;
+                height: 70px;
+                border:none;
+                .search-bar{
+                    margin:3rem 1rem 1rem 10rem;
+                    width: 230px;
+                    display: flex;
+                    border-radius: 2rem;
+                    border: 1px solid var(--text-light);
+                    input{
+                        width: 200px;
+                        height: 30px;
+                        border-top-left-radius:2rem;
+                        border-bottom-left-radius: 2rem;
+                        border:none ;
+                        padding-left: 2rem;
+                    }
+                    input:focus{
+                        outline:0;
+                    }
+                    .search-submit{
+                        width: 30px;
+                        height: 30px;
+                        border-top-right-radius: 2rem;
+                        border-bottom-right-radius: 2rem;
+                        background-color: white;
+                    }
+                    .search-submit:focus{
+                        outline:0;
+                    }
+                }
+            }
+            .category{
+                width: 380px;
+                height: auto;
+                margin: 10px 50px 50px 27px;
+                padding-bottom: 30px;
+                border-radius: 0.5rem;
+                h2{
+                    margin:1rem auto 2rem 1rem;
+                }
+                .category-list{
+                    margin-left: 1rem;
+                    .list-items{
+                        background: var(--sky) !important;
+                        padding: .4rem 1rem !important;
+                        margin: .8rem 0 !important;
+                        border-radius: 3rem !important;
+                        width: 90% !important;
+                        display: flex !important;
+                        justify-content: space-between !important;
+                        a{
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            .popular-post{
+                width: 380px;
+                height: auto;
+                margin: 30px 50px 50px 27px;
+                border-radius: 0.5rem;
+                h2{
+                    margin:1rem auto 2rem 1rem;
+                }
+                .popular-post-content{
+                    width: 98%;
+                    height: 300px;
+                    margin-left:7px;
+                    .popular-post-image{
+                        width: 100%;
+                        height: 250px;
+                        position: absolute;
+                        div{
+                            overflow: hidden;
+                        }
+                        img{
+                            width: 100%;
+                            height: 230px;
+                        }
+                        img:hover{
+                            transform: scale(1.3);
+                        }
+                        .post-info{
+                            padding: .4rem .1rem !important;
+                            bottom: 0rem !important;
+                            border-radius: 0rem !important;
+                            background: white !important;
+                            width: 70%;
+                            bottom: 3% !important;
+                            position: absolute;
+                            span{
+                                font-size: 1.2rem;
+                                padding-left: 1rem;
+                            }
+                        }
+                    }
+                    .post-title{
+                        position: absolute;
+                        width: 100%;
+                        height: 50px;
+                        bottom: 0px;
+                        a{
+                            font-size: 1.5rem;
+                            font-family: var(--Anton);
+                            color: #000;
+                        }
+                    }
+                }
+                .popular-tags{
+                    width: 380px;
+                    height: auto;
+                    margin: 30px 50px 50px 10px;
+                    padding: 5rem 0;
+                    h2{
+                        margin:1rem auto 2rem 1rem;
+                    }
+                    .tags{
+                        margin-top: 2rem;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .tag{
+                            background: var(--sky);
+                            padding: .4rem 1rem;
+                            margin: .4rem .6rem;
+                            border-radius: 3rem;
+                        }
+                        .tag:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}

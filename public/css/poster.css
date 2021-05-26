@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+.page-wrapper {
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-wrapper .intro {
+  width: 69.2%;
+  height: 25rem;
+  margin: 2% 15% 0% 15.5%;
+  position: relative;
+}
+
+.page-wrapper .intro img {
+  width: 100%;
+  height: 100%;
+  border-radius: .3rem;
+  z-index: 1;
+  position: absolute;
+}
+
+.page-wrapper .intro .letter_intro {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 2rem;
+  color: red !important;
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.page-wrapper .page_content {
+  width: 70%;
+  height: auto;
+  margin: 0 15%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  padding: 98px 0;
+}
+
+.page-wrapper .page_content .content {
+  width: 526px;
+  height: 325px;
+  margin-top: -8rem;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 9rem;
+}
+
+.page-wrapper .page_content .content .items {
+  width: 98%;
+  height: 100%;
+  margin-left: 1%;
+}
+
+.page-wrapper .page_content .content .items img {
+  width: 100%;
+  height: 100%;
+  border-radius: .3rem;
+  z-index: 1;
+}
+
+.page-wrapper .page_content .content .items .letter {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 3;
+  top: 0rem;
+  font-family: 'Hanalei', cursive;
+  font-size: 4rem;
+  color: #ffffff;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8rem;
+}
+
+.page-wrapper .page_content .content .items .letter a:hover {
+  color: #fcba03 !important;
+}
+/*# sourceMappingURL=poster.css.map */

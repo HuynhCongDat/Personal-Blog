@@ -1,0 +1,123 @@
+.content {
+	.content-left {
+		border-top: 1px solid #e0e0d1;
+		width: 72.5%;
+		height: 800px;
+		margin: .5em auto auto 0;
+		float: left;
+		.tabbar-control {
+			width: 100%;
+			height: 30px;
+			display: flex;
+			margin-top: 1em;
+			.line-control {
+				margin-bottom: 0;
+				margin-left: 54px;
+				width: 100%;
+				.trending {
+					display: inline;
+					width: 100px;
+					margin-left: 0px;
+					height: 20px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+.line-control-color {
+	margin-bottom: 0;
+	margin-left: 54px;
+	width: 100%;
+}
+.content-left {
+	.container-main {
+		width: 100%;
+		height: 700px;
+		padding-left: .2em;
+		display: grid;
+		grid-template-columns: repeat(2,500px);
+		column-gap: 1.5em;
+		.container {
+			width: 500px;
+			height: 200px;
+			margin: 2em 0 auto 3em;
+			padding-left: 0;
+			position: relative;
+			overflow: hidden;
+			box-shadow: -1px 0px 5px 5px #DEE1E1;
+			border-radius: .3rem;
+			.content-post-image {
+				width: 200px;
+				height: 200px;
+				float: left;
+			}
+			.content-post-main {
+				margin: .2em 0em .2em 12.6em;
+				padding-left: 10px;
+				position: absolute;
+				height: 190px;
+				.content-post-title {
+					font-size: 1.8em;
+				}
+				.content-post-title:focus{
+					outline: 0;
+				}
+				.content-post-calendar {
+					padding-left: .3em;
+
+				}
+				.content-post {
+					margin-top: 1em;
+				}
+				i, span{
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+
+
+/*End Post Content Left*/
+
+/*Post Content Right*/
+
+.content {
+	.content-right {
+		width: 25%;
+		height: 705px;
+		float: right;
+		margin: .5rem 3.5rem auto 0;
+		overflow: hidden;
+		position: relative;
+		box-shadow: -1px 0px 5px 5px #DEE1E1;	
+		.avatar-right-image {
+			background: rgba(0,0,0,0.7);
+			z-index: 100;
+			opacity: 0.7;
+			width: auto;
+			height: 800px;
+		}
+		.content-avatar {
+			position: absolute;
+			width: 300px;
+			height: 200px;
+			top: 200px;
+			left: 26px;
+			z-index: 110;
+			text-align: center;
+			color: white;
+			.content-avatar-title {
+				font-family: 'Dancing Script', cursive;
+				font-size: 4em;
+			}
+			.content-avatar-header {
+				font-family: 'Pacifico', cursive;
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+/*End Post Content Right*/

@@ -1,0 +1,44 @@
+.book_container{
+	width: 100%;
+	height: 500px;
+	margin-bottom: 5rem;
+	
+	.book_shelf{
+		width: 96%;
+		height: 100%;
+		margin-left: 2%;
+		background-color: #f7f2ee;
+		.lib_name{
+			width: 100%;
+			height: 15%;
+			text-align: center;
+			font-size: 3rem;
+			
+		}
+		.lib_sub{
+			width: 100%;
+			height: 15%;
+			text-align: center;
+			font-size: 2rem;
+		}
+		.lib_container{
+			width: 100%;
+			height: 70%;
+			display: flex;
+			justify-content: space-between;
+			.book{
+				width: 15%;
+				height: 300px;
+				margin: 2rem;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+				img:hover{
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	
+}

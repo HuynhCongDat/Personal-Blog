@@ -1,0 +1,483 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Merriweather&family=Roboto+Mono:wght@100&display=swap');
+* {
+    border: none;
+    text-decoration: none;
+    padding:0;
+    margin:0;
+}
+.top-hero {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    min-height: 450px;
+    .post-thumb {
+        width: 100%;
+        height: 55rem;
+        z-index: 1;
+        opacity: .5;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .text {
+        position: absolute;
+        z-index: 2;
+        bottom: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 1.5rem;
+        color: black;
+        .title {
+            display: block;
+            padding-bottom: 1rem;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: left;
+            color: black;
+        }
+
+        .description {
+            position: relative;
+            margin-left: -19rem;
+            display: flex;
+            .details {
+                position: relative;
+                font-size: 1.5rem;
+                font-weight: bold;
+                display: flex;
+                .author {
+                    padding-bottom: 0.5rem;
+                    font-style: italic;
+                }
+                .date {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+.hr_line{
+    width: 100%;
+    height: 50px;
+    margin-top: 5rem;
+    position: relative;
+    .stars{
+        width: 20%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40%;
+        i{
+            margin-left: 2rem;
+            color: gold;
+        }
+    }
+
+}
+
+.post-content {
+    background-color: white;
+    position: relative;
+    padding: 100px 250px;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    padding-top: 2rem;
+    * {
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin-left: -20rem;
+        margin-right: -20rem;
+    }
+    h2{
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: left;
+        margin-left: -20rem;
+        margin-right: -20rem;
+    }
+    h3{
+        font-size: 2.3rem;
+        font-weight: bold;
+        text-align: left;
+        margin-left: -20rem;
+        margin-right: -20rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    a{
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+    p {
+        display: block;
+        font-size: 1.8rem;
+        padding-bottom: 1.75rem;
+        text-align: justify;
+        margin-left: -20rem;
+        margin-right: -20rem;
+    }
+    p:last-child {
+        padding-bottom: 0;
+    }
+    ul {
+        display: block;
+        list-style: disc inside;
+        font-size: 2rem;
+        li {
+            padding-left: .5rem;
+            padding-bottom: 1rem;
+            font-size: 2rem;
+            margin-left: -17rem;
+        }
+    }
+    ol{
+        display: block;
+        list-style: disc inside;
+        font-size: 2rem;
+        li {
+            padding-left: -5rem;
+            padding-bottom: 1rem;
+            font-size: 2rem;
+            margin-left: -17rem;
+        }
+    }
+    strong{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    img{
+        max-width: 100%;
+        width: 800px;
+        max-height: 80rem;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        margin-left: 13%;
+        border-radius: 1rem;
+    }
+}
+
+.generate_info{
+    display: flex;
+    height: auto;
+    width: 100%;
+    .post-info-author{
+        width: 39%;
+        height: 800px;
+        margin: 1rem 0 0 1.5rem;
+        .info-author{
+            width: 93%;
+            height: 90%;
+            margin: 2rem 0 0 4rem;
+            .title_welcome{
+                width: 100%;
+                height: 70px;
+                text-align: center;
+                background-color: #192841;
+                padding-top: 0.1rem;
+                h2{
+                    color: white;
+                    font-size: 2rem;
+                }
+            }
+            .picture-author{
+                width: 250px;
+                height: 250px;
+                border-radius: 100%;
+                margin: 4rem 15rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100%;
+                }
+            }
+            .info{
+                width: 400px;
+                height: 200px;
+                margin: 0 7rem;
+                text-align: center;
+                .name{
+                    h1{
+                        font-family: 'Itim', cursive;
+                    }
+                }
+                .description{
+                    p{
+                        font-family: 'Merriweather', serif;
+                    }
+                }
+            }
+            .social_info{
+                width: 400px;
+                height: 50px;
+                margin: 0 7rem;
+                text-align: center;
+                i{
+                    font-size: 2rem;
+                    margin: 1rem;
+                }
+                i:hover{
+                    color: #747474;
+                }
+            }
+        }
+    }
+    .comment{
+        position: relative;
+        padding: 100px 0px;
+        width: 40%;
+        height: auto;
+        margin-left: 10%;
+        margin-top: 1rem;
+        padding-top: 2rem;
+        .panel{
+            width: 100%;
+            margin-bottom: 3rem;
+            .panel-heading{
+                .panel-title{
+                    .logo{
+                        width: 200px;
+                        height: 100px;
+                        margin:2rem auto auto 20rem;
+                        display: flex;
+                        .why{
+                            font-size: 3rem;
+                            font-family: 'Dancing Script', cursive;
+                            padding-top: 3rem;
+                            margin-left:2rem;
+                            color: #1F9AE2;
+                            font-weight: bold;
+                        }
+                        span{
+                            text-decoration: none !important;
+                        }
+
+                        #heart {
+                            position: relative;
+                            width: 100px;
+                            height: 90px;
+                            animation: heartbeat 1s infinite;
+                            margin:8px -42px 8px -40px;
+                        }
+                        #heart:before,
+                        #heart:after {
+                            position: absolute;
+                            content: "";
+                            left: 50px;
+                            top: 0;
+                            width: 50px;
+                            height: 80px;
+                            background: red;
+                            -moz-border-radius: 50px 50px 0 0;
+                            border-radius: 50px 50px 0 0;
+                            -webkit-transform: rotate(-45deg);
+                               -moz-transform: rotate(-45deg);
+                                -ms-transform: rotate(-45deg);
+                                 -o-transform: rotate(-45deg);
+                                    transform: rotate(-45deg);
+                            -webkit-transform-origin: 0 100%;
+                               -moz-transform-origin: 0 100%;
+                                -ms-transform-origin: 0 100%;
+                                 -o-transform-origin: 0 100%;
+                                    transform-origin: 0 100%;
+                        }
+                        #heart:after {
+                            left: 0;
+                            -webkit-transform: rotate(45deg);
+                               -moz-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                                 -o-transform: rotate(45deg);
+                                    transform: rotate(45deg);
+                            -webkit-transform-origin: 100% 100%;
+                               -moz-transform-origin: 100% 100%;
+                                -ms-transform-origin: 100% 100%;
+                                 -o-transform-origin: 100% 100%;
+                                    transform-origin :100% 100%;
+                        }
+                        @keyframes heartbeat
+                        {
+                          0%
+                          {
+                            transform: scale( .25 );
+                          }
+                          20%
+                          {
+                            transform: scale( .2 );
+                          }
+                          40%
+                          {
+                            transform: scale( .25 );
+                          }
+                          60%
+                          {
+                            transform: scale( .2 );
+                          }
+                          80%
+                          {
+                            transform: scale( .25 );
+                          }
+                          100%
+                          {
+                            transform: scale( .25 );
+                          }
+                        }
+                    }
+                    .logo:hover{
+                        background: url('//cdn.shopify.com/s/files/1/0382/4185/files/fly-hearts.gif?675304149355108345');
+                    }
+                }
+            }
+            .panel-collapse{
+                .panel-body{
+                    .send-btn{
+                        width: 7rem;
+                        height: 4rem;
+                        button{
+                            background:#f6f6f6;
+                            margin-left: 48rem;
+                            background: green;
+                        }
+                        button:focus{
+                            outline:0;
+                        }
+                        button:hover{
+                            cursor: pointer;
+                        };
+                    }
+                }
+            }
+        }
+        .input_comment{
+            width: 59rem;
+            height: 15rem;
+            .body{
+                width: 57.5rem;
+                height: 10rem;
+                z-index: 1;
+                position: absolute;
+                textarea{
+                    width: 100%;
+                    height: 100%;
+                    padding:1rem;
+                    padding-top: 1rem;
+                    padding-right: 1rem;
+                }
+            }
+            .icon{
+                width: 7rem;
+                height: 7rem;
+                border-radius: 4rem;
+                position: absolute;
+                z-index: 3;
+                top: 3.5rem;
+                right: 13rem;
+                i{
+                    width: 100%;
+                    height: 100%;
+                    font-size: 7rem;
+                }
+                i:hover{
+                    cursor: pointer;
+                };
+            }
+        }
+        .show-comments{
+            position: relative;
+            width: 75%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            .user_post{
+                width: 60rem;
+                height: 18rem;
+                margin-bottom: 1rem;
+                img{
+                    border-radius: 100%;
+                    width: 5rem;
+                    height: 5rem;
+                    margin:1rem;
+                    margin-top: 12rem;
+                }
+                .post-comment{
+                    width: 45rem;
+                    height: auto;
+                    max-height: 12rem;
+                    display: flex;
+                    margin: 1rem 0 2rem 1rem;
+                    background-color: white;
+                    padding: 0.5rem 0 1rem 1rem;
+                    .content{
+                        .name{
+                            h1{
+                                font-size: 1.3rem;
+                                font-weight: bold;
+                                margin-top: 0.5rem;
+                            }
+                        }
+                        .calendar{
+                            font-size: 0.9rem;
+                        }
+                        .body{
+                            margin-top: 1rem;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                #message{
+                    //position: absolute;
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 26% 76%, 0 100%, 11% 75%, 0% 75%);
+                    margin: -17rem auto auto 6rem;
+                    width: 450px;
+                }
+            }
+        }
+    }
+}
+
+
+.pagination_link{
+    margin-left: 21rem;
+}
+
+// .rec-posts {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 50px 100px;
+//     width: 100%;
+//     height: auto;
+//     .rec-sep {
+//         margin-bottom: 1.5rem;
+//     }
+//     .articles {
+//         grid-template-columns: repeat(4, 1fr);
+//         column-gap: 0.5rem;
+//         width: auto;
+//         min-width: 720px;
+//         .article {
+//             width: 168px;
+//             border-radius: $border-radius;
+//             background-color: $color-background-grey;
+//             .thumb {
+//                 background-image: url('../images/tropical-rect.jpg');
+//                 background-size: 100% 100%;
+//                 background-position: center;
+//                 background-repeat: no-repeat;
+//             }
+//         }
+//     }
+// }
